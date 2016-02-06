@@ -1,0 +1,19 @@
+group 'me.meyerzinn'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'sponge'
+        url = 'http://repo.spongepowered.org/maven'
+    }
+}
+
+dependencies {
+    compile 'org.spongepowered:spongeapi:3.0.0'
+    compile 'org.reflections:reflections:0.9.9-RC1'
+}
